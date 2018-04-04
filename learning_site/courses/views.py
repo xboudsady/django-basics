@@ -11,4 +11,4 @@ def course_list(request):
 
 def course_detail(request, pk):
     course = Course.objects.get(pk=pk)
-    return render(request, 'courses/course_detail.html', {'course': coursegit})
+    return render(request, 'courses/course_detail.html', {'course': course})
